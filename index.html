@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SecureMe Dashboard">
+  <title>SecureMe Dashboard</title>
+  <!-- Link to external CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.125.0/dist/index.bundle.min.js"></script>
+</head>
+<body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+  <!-- Header Section -->
+  <header class="fixed top-0 left-0 right-0 h-16 bg-white flex items-center justify-between px-6 z-10 border-b border-neutral-100">
+    <div class="flex items-center space-x-3">
+      <div class="h-8 w-8 rounded-md bg-emerald-500 flex items-center justify-center shadow-sm">
+        <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2 7h7l-5 3.5 2 7-5-3.5-5 3.5 2-7-5-3.5h7z"/></svg>
+      </div>
+      <span class="font-semibold text-lg">SecureMe</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <button class="h-9 w-9 flex items-center justify-center rounded-full hover:bg-neutral-100">
+        <svg class="h-5 w-5 text-neutral-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5c5.75 0 10.5 4.75 10.5 10.5s-4.75 10.5-10.5 10.5-10.5-4.75-10.5-10.5 4.75-10.5 10.5-10.5zm0 1.5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm-1 12h2v2h-2zm0-6h2v4h-2z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="pt-28 pl-24 pr-6 pb-12">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-light mb-1">Good afternoon, <span class="font-semibold">Juan</span></h1>
+      <p class="text-neutral-500">Your security score is <span class="text-emerald-500 font-medium">62</span> — moderate protection</p>
+
+      <!-- Critical Priorities Section -->
+      <section class="mt-12">
+        <h2 class="text-lg font-semibold mb-8 pl-1 border-l-4 border-emerald-500 pl-4">Critical Priorities</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Priority Card 1 -->
+          <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="py-5 px-6 border-b border-neutral-100 flex justify-between items-center">
+              <h3 class="font-medium">Enable Two-Factor Authentication</h3>
+              <span class="inline-block px-2.5 py-1 bg-red-100 text-red-700 text-xs rounded-full">Critical</span>
+            </div>
+            <div class="p-6">
+              <p class="text-neutral-600">Secure your accounts with an additional layer of protection beyond passwords.</p>
+              <button class="text-emerald-600 hover:text-emerald-700 font-medium flex items-center">
+                Implement
+                <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21l-6-6h4v-6h4v6h4l-6 6z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Priority Card 2 -->
+          <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="py-5 px-6 border-b border-neutral-100 flex justify-between items-center">
+              <h3 class="font-medium">Update All Software and Systems</h3>
+              <span class="inline-block px-2.5 py-1 bg-red-100 text-red-700 text-xs rounded-full">Critical</span>
+            </div>
+            <div class="p-6">
+              <p class="text-neutral-600">Install the latest security patches to protect against known vulnerabilities.</p>
+              <button class="text-emerald-600 hover:text-emerald-700 font-medium flex items-center">
+                Implement
+                <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21l-6-6h4v-6h4v6h4l-6 6z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-neutral-800 text-white text-center py-6">
+    <p>&copy; 2025 SecureMe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
